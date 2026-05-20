@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+	--primary: #f3b3e4;
+	--on-primary: #4d1f47;
+	--secondary: #dbbed2;
+	--on-secondary: #3d2a39;
+	--tertiary: #f5b8a5;
+	--on-tertiary: #4c2619;
+
+	--primary-container: #66355f;
+	--on-primary-container: #ffd7f3;
+	--secondary-container: #554050;
+	--on-secondary-container: #f8daee;
+	--tertiary-container: #663c2e;
+	--on-tertiary-container: #ffdbd0;
+
+	--surface-dim: #171216;
+	--surface: #171216;
+	--surface-bright: #3f373c;
+
+	--surface-container-lowest: #120c11;
+	--surface-container-low: #201a1e;
+	--surface-container: #241e22;
+	--surface-container-high: #2f282d;
+	--surface-container-highest: #3a3337;
+
+	--on-surface: #ecdfe5;
+	--on-surface-v: #d1c2cb;
+	--outline: #9a8d95;
+	--outline-v: #4e444b;
+
+	--error: #ffb4ab;
+	--on-error: #690005;
+}
+
+.dark,
+.theme--dark.v-application {
+	--v-primary-base: var(--primary);
+	--v-secondary-base: var(--secondary);
+	--v-accent-base: var(--tertiary);
+	--v-error-base: var(--error);
+}
+
+.theme--dark.v-application {
+	background: var(--surface);
+	color: var(--on-surface);
+}
+
+.theme--dark.v-btn.v-btn--has-bg {
+	border-radius: 12px;
+	background: var(--secondary-container) !important;
+	color: var(--on-secondary-container);
+}
+
+button.v-btn.v-btn--has-bg.primary {
+	border-radius: 12px;
+	background: var(--primary-container) !important;
+	color: var(--on-primary-container) !important;
+}
+
+.v-card.v-sheet.collapsable-card,
+.v-card__title.collapsable-card-title,
+.v-window__container,
+.v-data-table.temperature-table,
+.v-expansion-panel,
+.v-data-table,
+.file-system,
+.theme--dark.v-card,
+.v-data-table-header
+table,
+.theme--dark.v-data-table.v-data-table--fixed-header thead th {
+	background: var(--surface-container) !important;
+	color: var(--on-surface) !important;
+}
+
+.theme--dark.v-icon, .theme--dark.v-application .text--secondary {
+	color: var(--on-surface) !important;
+}
+
+aside, nav, .v-navigation-drawer__border, .toolbar-logo {
+	background: var(--surface) !important;
+	border: none !important;
+	color: var(--on-surface) !important;
+}
+
+.v-sheet.v-app-bar.v-toolbar:not(.v-sheet--outlined) {
+	box-shadow: none !important;
+}
+
+.v-card.collapsable-card:not(.collapsed) .v-card__title.collapsable-card-title {
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+	background: var(--surface-container-low) !important;
+}
+
+.theme--dark.v-divider, tr {
+	border-color: var(--surface) !important;
+}
+
+.theme--dark.v-input, .theme--dark.v-input input, .theme--dark.v-input textarea {
+	color: var(--on-surface);
+}
+
+.v-text-field--outlined fieldset {
+	border-color: var(--outline-v) !important;
+}
+
+table * {
+	border-bottom-color: var(--surface) !important;
+}
+
+.v-text-field--outlined:hover fieldset {
+	border-color: var(--primary) !important;
+}
+
+header {
+	background: var(--surface-container) !important;
+}
+
+.v-app-bar--fixed {
+	background: var(--surface) !important;
+}
+
+.v-list.grow.pt-0.v-sheet.theme--dark.v-list--dense {
+	background: var(--surface) !important;
+}
+
+.v-list-item--active.v-list-item.v-list-item--link.theme--dark {
+	background: var(--primary-container) !important;
+	color: var(--on-primary-container);
+	border-radius: 30px;
+}
+
+.v-list-item--active.v-list-item.v-list-item--link.theme--dark::before {
+    display: none !important;
+}
+
+.background-logo {
+	opacity: 0.04 !important;
+}
+
+.v-item-group {
+	gap: 0.25rem;
+	justify-content: space-between;
+	background: none !important;
+}
+
+#card-content > div > div:nth-child(1) > div > div:nth-child(2) > div.row.align-start.justify-end > div.text-right.col.col-6 > div.v-item-group.theme--dark.v-btn-toggle.v-btn-toggle--dense.elevation-2 {
+	width: 100%;
+}
+
+.v-application .elevation-2 {
+	box-shadow: none !important;
+}
+.app-auto-scroll-container.console-scroller {
+	font-family: "JetBrains Mono" !important;
+	font-weight: 500;
+	color: red !important;
+}
+
+.theme--dark.v-chip:not(.v-chip--active) {
+	background: var(--secondary-container);
+	color: var(--on-secondary-container);
+}
+
+.v-card {
+	padding: 0.5em;
+	border-radius: 16px !important;
+}
+
+.v-application--is-ltr .v-btn-toggle>.v-btn.v-btn:first-child,
+.v-application--is-ltr .v-btn-toggle>.v-btn.v-btn:last-child {
+	border-radius: 12px !important;
+}
+
+.theme--dark .v-card .v-card__title.collapsable-card-title {
+	border-bottom: none !important;
+}
+
+.theme--dark.v-list {
+	background: var(--surface-container-high) !important;
+}
+
+.v-input__slot {
+	border-radius: 12px !important;
+}
+
+.theme--dark.v-text-field>.v-input__control>.v-input__slot:before {
+	border: none !important;
+}
+
+.v-sheet.v-toolbar:not(.v-sheet--outlined) {
+	box-shadow: none !important
+}
