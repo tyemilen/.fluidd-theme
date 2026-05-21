@@ -196,3 +196,12 @@ header {
 .v-sheet.v-toolbar:not(.v-sheet--outlined) {
 	box-shadow: none !important
 }
+
+.file-system .theme--dark.v-data-table tr>td.actions div:before {
+	background: none;
+}
+
+.file-system .theme--dark.v-data-table tr>td.actions div {
+	background: var(--primary-container);
+	color: var(--on-primary-container);
+}
